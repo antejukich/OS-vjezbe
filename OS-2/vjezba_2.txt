@@ -1,0 +1,205 @@
+Zadatak 1
+    1.1 cd /Users/ajukic/Projects/2526_FIPU/OS-vjezbe/OS-2
+    1.2 git add .
+        git commit -m "Rijesen zadatak 1"
+        git push
+
+Zadatak 2
+    2.1 mkdir -p vjezba_2/data
+    2.2 mkdir -p vjezba_2/backup    
+    2.3 cd vjezba_2/data
+    2.4 touch script.js style.css .env
+    2.5 echo 'console.log("Hello, World!")' > script.js
+        echo 'body { background-color: #f0f0f0; }' > style.css
+        echo "VJEZBE=OS" > .env
+    2.6 Sadrzaj mozemo provjeriti naredbom `cat`
+        cat script.js style.css .env
+
+
+Zadatak 3
+    3.1 cp -v * .* ../backup
+    3.2 ls -laS ../backup
+        total 24
+        drwxr-xr-x@ 5 ajukic  staff  160 Mar 29 17:25 .
+        drwxr-xr-x@ 4 ajukic  staff  128 Mar 29 17:17 ..
+        -rw-r--r--@ 1 ajukic  staff   36 Mar 29 17:25 style.css
+        -rw-r--r--@ 1 ajukic  staff   29 Mar 29 17:25 script.js
+        -rw-r--r--@ 1 ajukic  staff   10 Mar 29 17:25 .env
+
+
+Zadatak 4
+
+    4.1 rm -iv *
+    4.2 cp -nv ../backup/* ../backup/.* .
+        ./backup/script.js -> ./script.js
+        ../backup/style.css -> ./style.css
+        cp: ../backup/. is a directory (not copied).
+        cp: ./.. and ../backup/.. are identical (not copied).
+        ./.env not overwritten
+    4.3 ls -lAt1
+        Mac:data ajukic$ ls -lAt1
+        style.css
+        script.js
+        .env
+    4.4 (Odgovor) tree -a
+        Mac:data ajukic$ tree -a
+        .
+        ├── .env
+        ├── script.js
+        └── style.css
+
+        1 directory, 3 files
+
+Zadatak 5
+
+    5.0 cd /Users/ajukic/Projects/2526_FIPU/OS-vjezbe/
+    5.1 Mac:OS-vjezbe ajukic$ ls -laS
+        total 0
+        drwxr-xr-x@ 13 ajukic  staff  416 Mar 29 17:45 .git
+        drwxr-xr-x@  9 ajukic  staff  288 Mar 22 18:23 OS-1
+        drwxr-xr-x@  5 ajukic  staff  160 Mar 29 17:11 .
+        drwxr-xr-x@  4 ajukic  staff  128 Mar 29 17:17 OS-2
+        drwxr-xr-x   3 ajukic  staff   96 Mar 22 17:31 ..
+    5.2 Mac:OS-vjezbe ajukic$ ls -lhS
+        total 0
+        drwxr-xr-x@ 9 ajukic  staff   288B Mar 22 18:23 OS-1
+        drwxr-xr-x@ 4 ajukic  staff   128B Mar 29 17:17 OS-2
+
+    5.3 tree -a
+    .
+├── .git
+│   ├── COMMIT_EDITMSG
+│   ├── FETCH_HEAD
+│   ├── HEAD
+│   ├── config
+│   ├── description
+│   ├── hooks
+│   │   ├── applypatch-msg.sample
+│   │   ├── commit-msg.sample
+│   │   ├── fsmonitor-watchman.sample
+│   │   ├── post-update.sample
+│   │   ├── pre-applypatch.sample
+│   │   ├── pre-commit.sample
+│   │   ├── pre-merge-commit.sample
+│   │   ├── pre-push.sample
+│   │   ├── pre-rebase.sample
+│   │   ├── pre-receive.sample
+│   │   ├── prepare-commit-msg.sample
+│   │   ├── push-to-checkout.sample
+│   │   ├── sendemail-validate.sample
+│   │   └── update.sample
+│   ├── index
+│   ├── info
+│   │   └── exclude
+│   ├── logs
+│   │   ├── HEAD
+│   │   └── refs
+│   │       ├── heads
+│   │       │   └── main
+│   │       └── remotes
+│   │           └── origin
+│   │               ├── HEAD
+│   │               └── main
+│   ├── objects
+│   │   ├── 08
+│   │   │   └── 394084cf0ad691d904214c551d7f8e2eaf17d2
+│   │   ├── 0e
+│   │   │   └── 711f4e901807f37a7f8ed054a880426adbd392
+│   │   ├── 19
+│   │   │   └── 509f24116a7663edd59a0ec2667024be925878
+│   │   ├── 1d
+│   │   │   └── 7082702f361e4e73c70cd9cdda6313f8fd5f68
+│   │   ├── 3f
+│   │   │   └── 9be513be3dab411bbb294c4417808f49069adb
+│   │   ├── 42
+│   │   │   └── 2c89ef9e8145362ec868113ccf7312c5d74c52
+│   │   ├── 45
+│   │   │   └── a0ba1f00e4bf7dc56d8ad3db6c80504ee31999
+│   │   ├── 48
+│   │   │   └── 17c91b6621d4e130c55d2c072e9f077b7477c3
+│   │   ├── 4b
+│   │   │   └── fb9408612f1308d3f61457ae63b0d6fdb6abb3
+│   │   ├── 4d
+│   │   │   └── ea76b7389d6ae665e4d27e128ee90055497147
+│   │   ├── 56
+│   │   │   └── 78c0356b1d424367c1931390efab45be3e5f8a
+│   │   ├── 57
+│   │   │   └── 77100e975c2d9a45eb1dea03138bf6f50e2369
+│   │   ├── 63
+│   │   │   └── fb326830e4499f164fe1344ee8e3866ce0626c
+│   │   ├── 6e
+│   │   │   └── 3470b090dc153d7a4f40d734a7319a2697d2d7
+│   │   ├── 81
+│   │   │   └── b707e25b39529e6477a7dc6e217dc9d1c23260
+│   │   ├── 87
+│   │   │   └── 546a67d40ab5bac5fcfa0a8600662fa91927ff
+│   │   ├── 91
+│   │   │   └── f644c78f6074f586a25fb7c894977ed88bea3e
+│   │   ├── 98
+│   │   │   └── fb214ced2e642872e315eb5e7395caafd7e846
+│   │   ├── 9b
+│   │   │   └── 34384631f6ed9a2d2056347172dda8755e0914
+│   │   ├── c0
+│   │   │   └── df1d0a505460fa2b9b4a19eb59c2b2f7b5a9de
+│   │   ├── cd
+│   │   │   └── 6b98b37d710d73bf08f7d31bf8058b1cfea5f0
+│   │   ├── d2
+│   │   │   └── 20c83758358132a6ec10e2f6b5ead601216840
+│   │   ├── d4
+│   │   │   └── 054447591e08002e36ee16afa0418221f0e2a4
+│   │   ├── dc
+│   │   │   └── b85f84f35357ac06dcfd256c15de78ec22adc3
+│   │   ├── df
+│   │   │   ├── 87458e3f7b3310cf118375205f7659a1d7d9f8
+│   │   │   └── d2d5e99c47f7279cf6389888bba2c4d8c105e1
+│   │   ├── e3
+│   │   │   └── 59315b6531eef72a8763c6c74d82736ed9318b
+│   │   ├── e6
+│   │   │   └── 9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+│   │   ├── f0
+│   │   │   └── 3add890743db3725bd61996e780047eee03fae
+│   │   ├── f9
+│   │   │   └── 3e3a1a1525fb5b91020da86e44810c87a2d7bc
+│   │   ├── info
+│   │   └── pack
+│   └── refs
+│       ├── heads
+│       │   └── main
+│       ├── remotes
+│       │   └── origin
+│       │       ├── HEAD
+│       │       └── main
+│       └── tags
+├── OS-1
+│   ├── backup
+│   │   └── backup.num
+│   ├── vjezba1
+│   │   └── README.md
+│   ├── vjezba2
+│   │   └── file_copy.txt
+│   ├── vjezba3
+│   │   ├── backup
+│   │   │   └── ajukic
+│   │   │       ├── notes.txt
+│   │   │       ├── script.sh
+│   │   │       └── todo.txt
+│   │   ├── notes.txt
+│   │   └── todo.txt
+│   ├── vjezba4
+│   │   └── subfolder
+│   ├── vjezba5
+│   │   └── 22288.num
+│   └── zadaca.md
+└── OS-2
+    ├── vjezba_2
+    │   ├── backup
+    │   │   ├── .env
+    │   │   ├── script.js
+    │   │   └── style.css
+    │   └── data
+    │       ├── .env
+    │       ├── script.js
+    │       └── style.css
+    └── vjezba_2.txt
+
+60 directories, 75 files
