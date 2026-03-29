@@ -123,3 +123,10 @@
   123  git commit -m "Rijesen zadatak 5"
   124  git push
   125  history > vjezba_2_history.txt
+  126  git add vjezba_2_history.txt
+  127  git commit -m "Dodana povijest naredbi za Vjezbu 2"
+  128  git push
+  129  pwd
+  130  git add .
+  131  git commit -m "Dodana povijest naredbi za Vjezbu 2_1.1"
+  132  history > vjezba_2_history.txt
