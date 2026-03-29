@@ -1,0 +1,125 @@
+    1  pwd
+    2  ls
+    3  mkdir vjezba1 && cd vjezba1
+    4  touch readme.md
+    5  cd ..
+    6  mkdir vjezba2 && touch vjezba2/file.txt
+    7  cp vjezba2/file.txt vjezba2/file_copy.txt
+    8  ls vjezba2
+    9  rm vjezba2/file.txt
+   10  mkdir OS-1
+   11  cd OS-1
+   12  touch zadaca.txt
+   13  pwd
+   14  mkdir vjezba5 && touch vjezba5/$RANDOM.num
+   15  mkdir /Users/ajukic/Documents/vjezba6
+   16  pwd
+   17  pwd
+   18  mkdir vjezba1 && cd vjezba1
+   19  touch README.md
+   20  cd ..
+   21  kdir vjezba2 && touch vjezba2/file.txt
+   22  mkdir vjezba2 && touch vjezba2/file.txt
+   23  cp vjezba2/file.txt vjezba2/file_copy.txt
+   24  ls vjezba2
+   25  cd vjezba2 && rm file.txt && cd ..
+   26  cd vjezba2 && rm vjezba2 && cd ..
+   27  cd vjezba2 && rmdir vjezba2 && cd ..
+   28  cd vjezba2 && rm file.txt && cd ..
+   29  pwd
+   30  cd ..
+   31  pwd
+   32  rmdir vjezba2
+   33  mkdir vjezba3 && mkdir vjezba3/backup
+   34  ouch vjezba3/notes.txt && touch vjezba3/todo.txt && touch vjezba3/script.sh
+   35  touch vjezba3/notes.txt && touch vjezba3/todo.txt && touch vjezba3/script.sh
+   36  cp vjezba3/notes.txt vjezba3/todo.txt vjezba3/script.sh vjezba3/backup/
+   37  rm vjezba3/script.sh && ls vjezba3
+   38  rm vjezba3/script.sh && ls
+   39  rm vjezba3/script.sh && ls vjezba3
+   40  ls
+   41  rm vjezba3/script.sh && ls vjezba3
+   42  mkdir vjezba3/backup/$USER
+   43  mv vjezba3/backup/notes.txt vjezba3/backup/todo.txt vjezba3/backup/script.sh vjezba3/backup/$USER/
+   44  mkdir vjezba4 && mkdir vjezba4/subfolder
+   45  touch vjezba4/$HOSTNAME
+   46  mv vjezba4/$HOSTNAME vjezba4/$USER
+   47  mv vjezba4/$USER vjezba4/subfolder/
+   48  rm /Users/ajukic/Projects/2526_FIPU/OS-vjezbe/OS-1/vjezba4/subfolder/$USER
+   49  mkdir vjezba5 && touch vjezba5/$RANDOM.num
+   50  ls vjezba5
+   51  cp vjezba5/22288.num vjezba5/backup.num
+   52  mkdir backup
+   53  mv vjezba5/backup.num backup/
+   54  mkdir /Users/ajukic/Documents/vjezba6
+   55  cd /Users/ajukic/Documents/vjezba6 && mkdir scripts && touch OS_script.md notes.txt
+   56  mv OS_script.md scripts/
+   57  mv notes.txt todo.txt
+   58  cd scripts && rm ../todo.txt
+   59  pwd
+   60  cd /Users/ajukic/Projects/2526_FIPU/OS-vjezbe/OS-1
+   61  git add .
+   62  git commit -m "Dodao sam prvu zadacu"
+   63  git push
+   64  git add .
+   65  git commit -m "Dodao sam prvu zadacu"
+   66  git push
+   67  cd os-vjezbe
+   68  pwd
+   69  cd /Users/ajukic/Projects/2526_FIPU/OS-vjezbe
+   70  mkdir OS-2
+   71  cd /Users/ajukic/Projects/2526_FIPU/OS-vjezbe/OS-2
+   72  touch vjezba_2.txt
+   73  git add .
+   74  git commit -m "Rijesen zadatak 1"
+   75  git push
+   76  mkdir -p vjezba_2/data
+   77  mkdir -p vjezba_2/data
+   78  mkdir -p vjezba_2/backup
+   79  cd vjezba_2/data
+   80  pwd
+   81  touch script.js style.css .env
+   82  echo 'console.log("Hello, World!")' > script.js
+   83  echo 'body { background-color: #f0f0f0; }' > style.css
+   84  echo "VJEZBE=OS" > .env
+   85  cat script.js style.css .env
+   86  git add .
+   87  git commit -m "Rjiesen zadatak 2"
+   88  git push
+   89  pwd
+   90  cp -v * .* ../backup
+   91  ls -laS ../backup
+   92  git add .
+   93  git commit -m "Rijesen zadatak 3"
+   94  pwd
+   95  cd vjezba_2/backup
+   96  cd backup
+   97  /Users/ajukic/Projects/2526_FIPU/OS-vjezbe/OS-2/vjezba_2/backup
+   98  cd /Users/ajukic/Projects/2526_FIPU/OS-vjezbe/OS-2/vjezba_2/backup
+   99  git add .
+  100  git commit -m "Rijesen zadatak 3"
+  101  git push
+  102  cd /Users/ajukic/Projects/2526_FIPU/OS-vjezbe/OS-2/vjezba_2/data
+  103  rm -iv *
+  104  pwd
+  105  cp -nv ../backup/* ../backup/.* .
+  106  ls -lAt1
+  107  tree -a
+  108  tree
+  109  tree -a
+  110  git add .
+  111  git commit -m "Rijesen zadatak 4"
+  112  git push
+  113  pwd
+  114  /Users/ajukic/Projects/2526_FIPU/OS-vjezbe/
+  115  cd /Users/ajukic/Projects/2526_FIPU/OS-vjezbe/
+  116  ls -laS
+  117  ls -lhS
+  118  tree -a
+  119  pwd
+  120  git add.
+  121  git add -
+  122  git add .
+  123  git commit -m "Rijesen zadatak 5"
+  124  git push
+  125  history > vjezba_2_history.txt
